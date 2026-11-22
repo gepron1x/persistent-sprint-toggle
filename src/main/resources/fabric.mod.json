@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "persistent-sprint-toggle",
+	"version": "${version}",
+	"name": "Persistent Sprint Toggle",
+	"description": "Now Sprint does not reset when you restart your game. You can just forget about it.",
+
+	"authors": [
+		"gepron1x"
+	],
+	"contact": {
+		"homepage": "https://github.com/gepron1x/persistent-sprint-toggle/",
+		"sources": "https://github.com/gepron1x/persistent-sprint-toggle/"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/persistent-sprint-toggle/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.gepron1x.pst.PersistentSprintToggle"
+		],
+		"client": [
+			"org.gepron1x.pst.client.PersistentSprintToggleClient"
+		]
+	},
+	"mixins": [
+		"persistent-sprint-toggle.mixins.json",
+		{
+			"config": "persistent-sprint-toggle.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": ">=26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

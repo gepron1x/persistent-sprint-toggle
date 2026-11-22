@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "org.gepron1x.pst.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "ToggleKeyMappingMixing"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "mixins": [
+
+  ]
+}
